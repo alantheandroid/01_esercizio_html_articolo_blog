@@ -5,11 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>Lezione HTML</title>
+
+    <style>
+        body {
+            background-color: darkslategrey;
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        header {
+            margin: auto;
+            text-align: center;
+        }
+
+        article {
+            margin: auto;
+            width: 50%;
+        }
+
+        div.article-images {
+            display: inline-flex;
+            width: auto;
+            border: 1px solid white;
+        }
+
+        div.article-images img {
+            width: 50%;
+        }
+
+        footer {
+            width: fit-content;
+            text-align: right;
+            margin: auto;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        #submit-button {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            width: 100px;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Titolo blog</h1>
+        <p><em>~ Citazione che fa da sottotitolo ~</em></p>
+    </header>
 
+    <hr>
+
+    <main>
+        <article>
+            <h2>Titolo dell'articolo</h2>
+            <p><em>Testo dell'articolo.</em><br>
+                "Once upon a time, in New York City in 1941.... At this club open to all comers to play, Night after night at a club named "MINSTONS PLAY HOUSE" in Harlem, they play jazz session competing with others. Young jazz men with new sense are gathering. At last, they created a new genre itself. They are sick and tired of conventional fixed style jazz. They eager to play jazz more freely as they wish. then... in 2071 in the universe. The bounty hunters, who are gathering in spaceship "BEBOP", will play freely without fear of risky things. They must create new dreams and films by breaking traditional styles. The work, which becomes a new genre itself, will be called <strong>COWBOY BEBOP</strong>.
+            </p>
+            <div class="article-images">
+                <img src="assets\hands.png" alt="Utente al pc">
+                <img src="assets\laptop.png" alt="Laptop su tavolo">
+            </div>
+        </article>
+    </main>
+        
+    <hr>
+
+    <footer>
+        <form action="" method="post">
+            <p>Iscriviti alla newsletter!</p>
+            <label for="fname_lname">Nome e cognome</label>
+            <input type="text" name="fname_lname" id="fname_lname">
+            <br>
+            <label for="email">Indirizzo e-mail</label>
+            <input type="text" name="email" id="email">
+            <input type="button" id="submit-button" value="Invia">
+        </form>
+    </footer>
 </body>
 
 </html>
